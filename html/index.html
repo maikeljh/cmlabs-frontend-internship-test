@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Categories</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/page/page.js"></script>
+  </head>
+
+  <body>
+    <nav class="bg-gray-900 text-white sticky top-0 z-[999]">
+      <div
+        class="container mx-auto px-4 py-2 flex justify-between items-center"
+      >
+        <a href="/" class="font-bold text-xl">mealapp</a>
+        <ul class="flex space-x-4">
+          <li><a href="/" class="hover:text-gray-300">Home</a></li>
+          <li><a href="/" class="hover:text-gray-300">Foods</a></li>
+          <li><a href="/" class="hover:text-gray-300">Ingredients</a></li>
+          <li><a href="/" class="hover:text-gray-300">Local Culinary</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="mx-auto">
+      <div class="bg-gray-200 py-16 font-bold">
+        <h2 class="text-center text-4xl">See All The Delicious Foods</h2>
+      </div>
+      <div
+        id="categoryList"
+        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-32 py-12"
+      ></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

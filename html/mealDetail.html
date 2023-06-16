@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Detail</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="bg-gray-900 text-white sticky top-0 z-50">
+        <div
+          class="container mx-auto px-4 py-2 flex justify-between items-center"
+        >
+          <a href="/" class="font-bold text-xl">mealapp</a>
+          <ul class="flex space-x-4">
+            <li><a href="/" class="hover:text-gray-300">Home</a></li>
+            <li><a href="/" class="hover:text-gray-300">Foods</a></li>
+            <li><a href="/" class="hover:text-gray-300">Ingredients</a></li>
+            <li><a href="/" class="hover:text-gray-300">Local Culinary</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-10">
+      <div class="container mx-auto">
+        <h2 id="mealDetailTitle" class="text-lg font-bold mb-4"></h2>
+        <div id="mealDetailContent"></div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/mealDetail.js"></script>
+  </body>
+</html>
