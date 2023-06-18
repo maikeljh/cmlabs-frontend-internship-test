@@ -12,27 +12,43 @@
   </head>
 
   <body>
-    <nav class="bg-gray-900 text-white sticky top-0 z-[999]">
+    <nav class="bg-gray-900 text-white sticky top-0 z-50">
       <div
         class="container mx-auto px-4 py-2 flex justify-between items-center"
       >
-        <a href="/" class="font-bold text-xl">mealapp</a>
-        <ul class="flex space-x-4">
-          <li><a href="/" class="hover:text-gray-300">Home</a></li>
-          <li><a href="/" class="hover:text-gray-300">Foods</a></li>
-          <li><a href="/" class="hover:text-gray-300">Ingredients</a></li>
-          <li><a href="/" class="hover:text-gray-300">Local Culinary</a></li>
+        <a href="/html/index.html" class="font-bold text-xl sm:mx-0 mx-auto"
+          >mealapp</a
+        >
+        <ul class="sm:flex space-x-4 hidden">
+          <li>
+            <a href="/html/index.html" class="hover:text-gray-300">Home</a>
+          </li>
+          <li>
+            <a href="/html/index.html" class="hover:text-gray-300">Foods</a>
+          </li>
+          <li>
+            <a href="/html/index.html" class="hover:text-gray-300"
+              >Ingredients</a
+            >
+          </li>
+          <li>
+            <a href="/html/index.html" class="hover:text-gray-300"
+              >Local Culinary</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
 
     <div class="mx-auto">
       <div class="bg-gray-200 py-16 font-bold">
-        <h2 class="text-center text-4xl">See All The Delicious Foods</h2>
+        <h2 class="text-center text-2xl sm:text-4xl mx-4">
+          See All The Delicious Foods
+        </h2>
       </div>
       <div
         id="categoryList"
-        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-32 py-12"
+        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 sm:mx-32 py-12"
       ></div>
     </div>
 

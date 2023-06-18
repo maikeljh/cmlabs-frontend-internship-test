@@ -1,9 +1,29 @@
 $(document).ready(function () {
   var mealListTitle = $("#mealListTitle");
   var mealList = $("#mealList");
-
+  var navigationHistory = $("#navigationHistory");
   var urlParams = new URLSearchParams(window.location.search);
   var category = urlParams.get("category");
+
+  navigationHistory.append(
+    $("<a>", {
+      href: "/html/index.html",
+      text: "Home",
+    })
+  );
+
+  navigationHistory.append(
+    $("<span>", {
+      text: " > ",
+    })
+  );
+
+  navigationHistory.append(
+    $("<span>", {
+      text: category,
+      class: "text-gray-400",
+    })
+  );
 
   mealListTitle.text(category + " Meals");
   mealList.empty();
@@ -36,7 +56,7 @@ $(document).ready(function () {
 
         var mealName = $("<h3>", {
           text: meal.strMeal,
-          class: "font-bold text-lg text-white",
+          class: "font-bold text-lg text-white text-center",
         });
 
         mealContent.append(mealName);

@@ -10,25 +10,37 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="bg-gray-900 text-white sticky top-0 z-50">
-        <div
-          class="container mx-auto px-4 py-2 flex justify-between items-center"
+    <nav class="bg-gray-900 text-white sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-2 flex justify-between items-center"
+      >
+        <a href="/html/index.html" class="font-bold text-xl sm:mx-0 mx-auto"
+          >mealapp</a
         >
-          <a href="/" class="font-bold text-xl">mealapp</a>
-          <ul class="flex space-x-4">
-            <li><a href="/" class="hover:text-gray-300">Home</a></li>
-            <li><a href="/" class="hover:text-gray-300">Foods</a></li>
-            <li><a href="/" class="hover:text-gray-300">Ingredients</a></li>
-            <li><a href="/" class="hover:text-gray-300">Local Culinary</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+        <ul class="sm:flex space-x-4 hidden">
+          <li>
+            <a href="/html/index.html" class="hover:text-gray-300">Home</a>
+          </li>
+          <li>
+            <a href="/html/index.html" class="hover:text-gray-300">Foods</a>
+          </li>
+          <li>
+            <a href="/html/index.html" class="hover:text-gray-300"
+              >Ingredients</a
+            >
+          </li>
+          <li>
+            <a href="/html/index.html" class="hover:text-gray-300"
+              >Local Culinary</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <main class="py-10">
+    <main class="py-10 sm:mx-0 mx-4">
       <div class="container mx-auto">
-        <h2 id="mealDetailTitle" class="text-lg font-bold mb-4"></h2>
+        <div id="navigationHistory" class="mb-4"></div>
         <div id="mealDetailContent"></div>
       </div>
     </main>
