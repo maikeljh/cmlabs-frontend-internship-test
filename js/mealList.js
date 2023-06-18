@@ -15,7 +15,7 @@ $(document).ready(function () {
   // Create navigation elements
   navigationHistory.append(
     $("<a>", {
-      href: "/html/index.html",
+      href: "/index.html",
       text: "Home",
     })
   );
@@ -84,7 +84,7 @@ $(document).ready(function () {
         // Click event for meal card
         mealCard.click(function () {
           var mealId = meal.idMeal;
-          window.location.href = "mealDetail.html?mealId=" + mealId;
+          window.location.href = "/mealDetail.html?mealId=" + mealId;
         });
       });
     },

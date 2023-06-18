@@ -50,7 +50,7 @@ $(document).ready(function () {
         // Click event for category card
         categoryCard.click(function () {
           var categoryName = category.strCategory;
-          window.location.href = "mealList.html?category=" + categoryName;
+          window.location.href = "/mealList.html?category=" + categoryName;
         });
       });
     },

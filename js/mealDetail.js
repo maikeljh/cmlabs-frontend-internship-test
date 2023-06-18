@@ -26,7 +26,7 @@ function fetchMealDetails(mealId) {
       // Home
       navigationHistory.append(
         $("<a>", {
-          href: "/html/index.html",
+          href: "/index.html",
           text: "Home",
         })
       );
@@ -40,7 +40,7 @@ function fetchMealDetails(mealId) {
       // Category
       navigationHistory.append(
         $("<a>", {
-          href: "/html/mealList.html?category=" + meal.strCategory,
+          href: "/mealList.html?category=" + meal.strCategory,
           text: meal.strCategory,
         })
       );
